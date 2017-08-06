@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+</head>
+<body>
+<form name="login" method="post" action="./php/htmlEnterPoint.php">
+    <p><b>Введите логин:</b><br>
+        <input type="text" name="loginText" size="40">
+    </p>
+    <p><b>Введите пароль:</b><br>
+        <input type="text" name="passwordText" size="40">
+        <br>
+    </p>
+    <p><input type="submit" name="login" value="Войти"></p>
+</form>
+<form name="logoff" method="post" action="./php/htmlEnterPoint.php">
+    <p><input type="submit" name="logoff" value="Выйти"></p>
+</form>
+
+<form name="getAllUsers" method="post" action="./php/htmlEnterPoint.php">
+    <p><input type="submit" name="getAllUsers" value="Показать всех пользователей"></p>
+</form>
+<hr>
+<form name="addGood" method="post" action="./php/htmlEnterPoint.php">
+    <p><b>Введите название товара:</b><br>
+        <input type="text" name="name" size="40">
+    </p>
+    <p><b>Введите название категории:</b><br>
+        <input type="text" name="category" size="40">
+        <br>
+    </p>
+    <p><b>Введите стоимость:</b><br>
+        <input type="text" name="cost" size="40">
+        <br>
+    </p>
+    <p><input type="submit" name="addGood" value="Добавить"></p>
+</form>
+
+<form name="removeGood" method="post" action="./php/htmlEnterPoint.php">
+    <p><b>Введите id товара на удаление:</b><br>
+        <input type="text" name="idGoodToRemove" size="40">
+    </p>
+    <p><input type="submit" name="removeGood" value="Удалить"></p>
+</form>
+
+<form name="getAllGoods" method="post" action="./php/htmlEnterPoint.php">
+    <p><input type="submit" name="getAllGoods" value="Показать все товары"></p>
+</form>
+
+<form name="getGoodsByCategory" method="post" action="./php/htmlEnterPoint.php">
+    <p><b>Номер поля для поиска:</b><br>
+    <input type="text" name="fieldNumber" size="40">
+</p>
+    <p><b>Строка для поиска:</b><br>
+        <input type="text" name="searchString" size="40">
+        <br>
+    </p>
+    <p><input type="submit" name="getGoodsByCategory" value="Показать все товары по категории"></p>
+</form>
+<hr>
+<form name="addCategory" method="post" action="./php/htmlEnterPoint.php">
+    <p><b>Введите название категории:</b><br>
+        <input type="text" name="name" size="40">
+    </p>
+    <p><input type="submit" name="addCategory" value="Добавить"></p>
+</form>
+
+<form name="removeCategory" method="post" action="./php/htmlEnterPoint.php">
+    <p><b>Введите id категории на удаление:</b><br>
+        <input type="text" name="idCategoryToRemove" size="40">
+    </p>
+    <p><input type="submit" name="removeCategory" value="Удалить"></p>
+</form>
+
+<form name="getAllCategories" method="post" action="./php/htmlEnterPoint.php">
+    <p><input type="submit" name="getAllCategories"
+              value="Показать все категории"></p>
+</form>
+<hr>
+</body>
+</html>
